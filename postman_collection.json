@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "3ca554c6-f2fd-4da2-8eae-747b0320edfe",
+		"name": "freelance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16708812"
+	},
+	"item": [
+		{
+			"name": "services/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/services/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"services",
+						"1"
+					]
+				},
+				"description": "# Get services by id\n\nReturn the service with the id"
+			},
+			"response": []
+		},
+		{
+			"name": "packages",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Creación de diseños en FIGMA\",\n    \"price\": 500,\n    \"deliverables_id\": 1,\n    \"service_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/packages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"packages"
+					]
+				},
+				"description": "# Save a package\n\nSave a package with the info"
+			},
+			"response": []
+		},
+		{
+			"name": "packages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/packages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"packages"
+					]
+				},
+				"description": "# Get packages\n\nGet all the packages created"
+			},
+			"response": []
+		},
+		{
+			"name": "deliverables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/deliverables",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"deliverables"
+					]
+				},
+				"description": "# Get all deliverables\n\nGet all deliverables created"
+			},
+			"response": []
+		},
+		{
+			"name": "deliverables",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Entrega de Frontend mobile con notificaciones Push\",\n    \"description\": \"Entrega de Frontend mobile con notificaciones Push\",\n    \"date\": \"2022-10-29 11:30:35\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/deliverables",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"deliverables"
+					]
+				},
+				"description": "# Create a Deliverable\n\nCreate a new deliverable with the description and the correct date and hour of delivery"
+			},
+			"response": []
+		},
+		{
+			"name": "services",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Creación de FRONTEND\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/services",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/services",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"services"
+					]
+				},
+				"description": "# Get all services\n\nGet all services with the package and deliverable details"
+			},
+			"response": []
+		}
+	]
+}
